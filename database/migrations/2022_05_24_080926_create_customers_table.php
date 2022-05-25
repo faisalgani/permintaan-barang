@@ -16,8 +16,8 @@ class CreateCustomersTable extends Migration
         Schema::create('customer', function (Blueprint $table) {
             $table->increments('id', 10);
             $table->integer('id_departemen');
-            $table->string('nik', 16);
-            $table->string('nama', 16);
+            $table->string('nik', 20);
+            $table->string('nama', 30);
             $table->datetime('created_at')->default(date("Y-m-d H:i:s"));
             $table->datetime('updated_at')->default(date("Y-m-d H:i:s"));
 
