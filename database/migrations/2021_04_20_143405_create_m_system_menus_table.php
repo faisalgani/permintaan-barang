@@ -33,7 +33,7 @@ class CreateMSystemMenusTable extends Migration
                 $table->primary('id');
                 $table->string('menu', 30);
                 $table->text('link');
-                $table->string('icon', 15)->nullable();
+                $table->string('icon', 30)->nullable();
                 $table->string('parent')->nullable();
                 $table->string('class', 50)->nullable();
                 $table->string('state', 25)->nullable();
